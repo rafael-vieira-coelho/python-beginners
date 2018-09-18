@@ -268,3 +268,25 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
+Solution 2
+--------
+
+::
+import turtle 
+
+def main():
+	quadrado(20)
+
+def linha():
+	turtle.forward(50)
+	turtle.left(90)
+
+def quadrado(inicial):
+	for i in range(4):
+		turtle.left(inicial)
+		inicial += 10
+		for j in range(4):
+			linha()
+		
+main()
+
